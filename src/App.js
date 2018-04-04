@@ -7,9 +7,16 @@ export class App extends Component {
     return (
       <div>
         <nav>
-          {/*Aca deben ir los links de navegacion*/}
+          <ul>
+            <li>
+              <Link to="page1">Page1</Link>
+            </li>
+            <li>
+              <Link to="page2">Page2</Link>
+            </li>
+          </ul>
         </nav>
-        {/* Aca tienes que agreager algo para que las rutas funcionen*/}
+        {this.props.children}
       </div>
     )
   }
